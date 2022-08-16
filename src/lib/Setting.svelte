@@ -14,9 +14,11 @@
     <h3 class="text-xl border-b border-secondary" class:isOpen={open} on:click={toggleOpen}>
         {category}
     </h3>
+     <p>{setting.desc}</p>
     {#if open}
         <div class="grid grid-cols-2">
             <div class="divider divider-horizontal"></div>
+           
             <div>
                 {#if setting.type}
                     <Value {...setting} />

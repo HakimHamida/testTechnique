@@ -2,6 +2,6 @@
     export let value;
 </script>
 
-<!-- TODO -->
-{value}
-<!--      -->
+<input type="time" bind:value={value} class="input input-primary input-bordered" />
+
+

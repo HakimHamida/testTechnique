@@ -4,12 +4,17 @@
     export let max;
 
     const handleChange = (e) => {
-        if ( !isNaN(e.target.value) ){
-            // TODO
-            value = e.target.value;
-            // -------------------------
+      
+            let varEntier = parseInt(e.target.value); 
+
+            if (value > max) {
+                varEntier = max;
+            } else if(value < min){
+                varEntier = min;
+            }
+             value = varEntier;
         }
-    }
+    
  
 </script>
 
